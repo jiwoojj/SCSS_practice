@@ -1,0 +1,47 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-outer a {
+  color: #fff;
+  text-transform: uppercase;
+  width: 300px;
+  display: inline-block;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background-color: #555;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.btn-outer a:hover {
+  background-color: transparent;
+}
+.btn-outer a:hover:before, .btn-outer a:hover:after {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: inherit;
+  height: inherit;
+  border: 1px solid #fff;
+  transition: 0.5s;
+  opacity: 0;
+}
+.btn-outer a:hover:hover:before {
+  transform: rotate(45deg);
+  opacity: 1;
+}
+.btn-outer a:hover:hover:after {
+  transform: rotate(-45deg);
+  opacity: 1;
+}

@@ -1,0 +1,15 @@
+.font{
+  &-large{
+    font-size:60px;
+    color:red;
+    text-transform: uppercase; //모두 대문자로
+  }
+  &-medium{
+    font-size:40px;
+    color:yellow;
+  }
+  &-small{
+    font-size:20px;
+    color:blue;
+  }
+}

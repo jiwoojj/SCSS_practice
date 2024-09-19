@@ -1,0 +1,51 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Button Hover Effects
+
+.btn-outer a {
+  color: #fff;
+  text-transform: uppercase;
+  width: 300px;
+  display: inline-block;
+  // border: 1px solid #fff;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background-color: #555;
+  transition: all 0.2s ease;
+  position: relative;
+  &:hover {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+      left: 0;
+      position: absolute;
+      content: "";
+      width: inherit;
+      height: inherit;
+      border: 1px solid #fff;
+      transition: 0.5s;
+      opacity: 0;
+    }
+    &:hover:before {
+      transform: rotate(45deg);
+      opacity: 1;
+    }
+    &:hover:after {
+      transform: rotate(-45deg);
+      opacity: 1;
+    }
+  }
+}

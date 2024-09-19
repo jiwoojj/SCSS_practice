@@ -1,0 +1,29 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sns {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 600px;
+  display: flex;
+  li {
+    border: 1px solid #333;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    a {
+      color: #333;
+      text-transform: uppercase;
+    }
+  }
+}
