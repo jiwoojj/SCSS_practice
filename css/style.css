@@ -1,20 +1,12 @@
-.frame {
-  margin: 15px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6em;
 }
 
-button.btn {
-  padding: 10px;
-  border: none;
-  width: 200px;
-  border-radius: 5px;
-  color: #fff;
+.portfolio p {
   text-align: center;
-}
-
-button.confirm {
-  background-color: yellowgreen;
-}
-
-button.warning {
-  background-color: crimson;
+  text-overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

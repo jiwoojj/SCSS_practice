@@ -1,0 +1,10 @@
+.frame {
+  padding:20px;
+  border: 1px solid #000 ;
+  text-align:center;
+  @at-root .heading{  //공통 class 다 해당되데
+    font-size:16px;
+    color:red;
+    font-weight:normal;
+  }
+}

@@ -1,0 +1,44 @@
+.btn{
+  background-color: #fff;
+  color:#000;
+  border:1px solid #333;
+  border-radius:3px;
+  padding:10px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover{
+    background-color: crimson;
+    color:#fff;
+  }
+}
+
+.frame{
+  display:flex;
+  gap:10px;
+  div{
+    // border: 1px solid #000;
+    flex:1;
+    height:150px;
+    border-radius:5px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.35s;
+    &:hover{
+      color: #fff;
+      cursor:pointer;
+      transform: translateY(-10px);
+    }
+    &:nth-child(1){
+      background-color: crimson;
+      
+    }
+    &:nth-child(2){
+      background-color: green;
+    }
+    &:nth-child(3){
+      background-color: blue;
+    }
+  }
+}
